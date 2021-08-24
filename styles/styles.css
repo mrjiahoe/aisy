@@ -16,6 +16,12 @@
 /****************************************************************************************************
 										NAVBAR SECTION
 *****************************************************************************************************/
+.contain {
+	max-width: 1900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .logo {
 	height: 80px;
 	width: auto;
@@ -26,9 +32,13 @@
 }
 
 nav {
+	position: fixed;
 	height: 80px;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.1);
+	/* background-color: transparent; */
+	/* background-color: rgba(255, 255, 255, 0.2); */
+	background-color: white;
+	z-index: 9999;
 }
 
 nav ul {
@@ -136,10 +146,11 @@ a:hover {
 }
 
 /****************************************************************************************************
-										Hero SECTION
+										HERO SECTION
 *****************************************************************************************************/
 .hero {
 	height: calc(100vh - 80px);
+	padding-top: 80px;
 }
 
 .hero-img {
@@ -167,4 +178,85 @@ a:hover {
 .hero-content h3 {
 	font-weight: 400;
 	font-size: 2rem;
+}
+
+/****************************************************************************************************
+										ABOUT SECTION
+*****************************************************************************************************/
+.about-section {
+	min-height: 100vh;
+	background-color: #ddd;
+	display: flex;
+}
+
+.about-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 80px;
+	margin: auto;
+	max-width: 1900px;
+}
+
+.about-content-section {
+	width: 50%;
+}
+
+.about-image-section {
+	max-width: 900px;
+}
+
+.about-image-section img {
+	width: 100%;
+	height: 70vh;
+	object-fit: cover;
+}
+
+.about-content-section .about-title {
+	text-transform: uppercase;
+	font-size: 28px;
+}
+
+.about-content-section .about-content h3 {
+	margin-top: 20px;
+	color: #5d5d5d;
+	font-size: 21px;
+}
+
+.about-content-section .about-content p {
+	margin-top: 10px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.about-content-section .about-content .about-button {
+	margin-top: 30px;
+}
+
+.about-content-section .about-content .about-button a {
+	background-color: var(--primary);
+	padding: 12px 40px;
+	color: #fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+	border-radius: 5rem;
+}
+
+.about-content-section .about-content .about-button a:hover {
+	background-color: var(--white);
+	color: var(--primary);
+	border: 1px solid var(--primary);
+}
+
+@media (max-width: 1024px) {
+	.about-container {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.about-image-section img {
+		margin-top: 5vh;
+		height: 50vh;
+	}
 }
