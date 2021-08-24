@@ -260,3 +260,76 @@ a:hover {
 		height: 50vh;
 	}
 }
+
+/****************************************************************************************************
+										WHY SECTION
+*****************************************************************************************************/
+.why-us {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	text-align: center;
+	margin: 5rem;
+}
+
+.title h2 {
+	font-size: 4rem;
+	color: var(--primary);
+	text-decoration: underline;
+	text-decoration-thickness: 3px;
+}
+
+.title p {
+	padding-top: 0.8rem;
+	font-size: 1.5rem;
+	color: #5d5d5d;
+}
+
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.card {
+	/* height: auto; */
+	flex-basis: auto;
+	flex-wrap: wrap;
+	max-width: 400px;
+	border: 1px solid #d9d9d9;
+	margin: 2rem;
+	border-radius: 25px;
+}
+
+.card img {
+	width: 100%;
+	border-radius: 25px 25px 0 0;
+}
+
+.card .text {
+	padding: 1rem;
+}
+
+@media (min-width: 1500px) {
+	.card {
+		max-width: 500px;
+	}
+}
+
+@media (max-width: 500px) {
+	.title {
+		margin: 2rem 1rem 1rem 1rem;
+	}
+	.title h2 {
+		font-size: 2.2rem;
+	}
+
+	.title p {
+		font-size: 1.3rem;
+	}
+}
