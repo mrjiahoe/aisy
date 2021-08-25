@@ -64,8 +64,8 @@ nav ul li a {
 	text-transform: uppercase;
 }
 
-a.active,
-a:hover {
+nav ul li a.active,
+nav ul li a:hover {
 	background: var(--primary);
 	color: white;
 	transition: 0.5s;
@@ -331,5 +331,94 @@ a:hover {
 
 	.title p {
 		font-size: 1.3rem;
+	}
+}
+
+/****************************************************************************************************
+										CONTACT SECTION
+*****************************************************************************************************/
+.contact {
+	min-height: 80vh;
+	margin-bottom: 80px;
+	/* padding-top: 80px; */
+	/* border: 2px solid grey; */
+}
+
+.contact .column {
+	max-width: 1300px;
+	margin: 0 auto;
+	/* border: 2px solid grey; */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.contact .column-left {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contact .row {
+	display: flex;
+	padding: 10px;
+	margin-right: auto;
+}
+
+.contact .row i {
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+	padding: 0 0.5rem;
+	color: var(--primary);
+	width: 3rem;
+	/* border: 2px solid grey; */
+}
+
+.contact .row-content {
+	/* border: 2px solid grey; */
+	padding: 0 1rem;
+}
+
+.contact .row h2 {
+	font-size: 1.8rem;
+}
+
+.contact .row p {
+	padding-left: 5px;
+	font-size: 1.1rem;
+	color: grey;
+}
+
+.contact .row a {
+	text-decoration: none;
+	color: black;
+}
+
+.contact .column-right iframe {
+	display: flex;
+	margin-left: 20px;
+	height: 50vh;
+	width: 50vw;
+	max-width: 740px;
+}
+
+@media (max-width: 1100px) {
+	.contact .column {
+		flex-direction: column;
+	}
+
+	.contact .column-left {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.contact .column-right iframe {
+		height: 50vh;
+		padding: 1rem 0 0 0;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
 	}
 }
