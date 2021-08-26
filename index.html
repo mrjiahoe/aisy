@@ -24,11 +24,11 @@
             <label for="check" class="check-btn"><i class="fas fa-bars"></i></label>
             <img src="./images/logo.jpg" alt="logo" class="logo">
             <img src="./images/logo2.jpg" alt="logo" class="logo2">
-            <ul>
+            <ul id="navLink" onclick="closeNav()">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Why</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#why-us">Why</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="#" class="whatsapp-btn"><i class="fab fa-whatsapp"></i>Whatsapp</a></li>
             </ul>
         </div>
@@ -44,7 +44,7 @@
         <img src="./images/hero.jpg" alt="hero" class="hero-img">
         <div class="hero-content">
             <h1>Aisy Bn</h1>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <h3>Modest, minimalist, casual wear for your lifestyle</h3>
         </div>
     </div>
     <!---------------------------------------------------------------------------------------- 
@@ -54,7 +54,7 @@
     <!---------------------------------------------------------------------------------------- 
                                         ABOUT US START 
     ----------------------------------------------------------------------------------------->
-    <div class="about-section">
+    <div class="about-section" id="about">
         <div class="about-container">
             <div class="about-content-section">
                 <div class="about-title">
@@ -65,7 +65,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat corporis officiis ea odio
                         debitis cupiditate. Blanditiis quis vel natus?</p>
                     <div class="about-button">
-                        <a href="">Learn More</a>
+                        <a href="#contact">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -82,22 +82,21 @@
     <!---------------------------------------------------------------------------------------- 
                                         WHY US START 
     ----------------------------------------------------------------------------------------->
-    <div class="why-us">
+    <div class="why-us" id="why-us">
         <div class="title">
             <h2>Why Choose Us?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, excepturi?</p>
         </div>
 
-        <div class="container">
-            <!-- <main class="card"> -->
-            <div class="card">
+        <div class="why-container">
+            <div class="why-card">
                 <img src="./images/why-1.jpg" alt="">
                 <div class="text">
                     <h3>lorem</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, vitae.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="why-card">
                 <img src="./images/why-2.jpg" alt="">
                 <div class="text">
                     <h3>lorem</h3>
@@ -106,7 +105,7 @@
                         repellat.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="why-card">
                 <img src="./images/why-3.jpg" alt="">
                 <div class="text">
                     <h3>lorem</h3>
@@ -116,7 +115,6 @@
                 </div>
             </div>
 
-            <!-- </main> -->
         </div>
     </div>
     <!---------------------------------------------------------------------------------------- 
@@ -127,7 +125,7 @@
     <!---------------------------------------------------------------------------------------- 
                                         CONTACT Start 
     ----------------------------------------------------------------------------------------->
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="title">
             <h2>Find Us Here</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>

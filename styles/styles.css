@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap");
 
 * {
 	font-family: "Urbanist", sans-serif;
@@ -23,7 +23,7 @@
 }
 
 .logo {
-	height: 80px;
+	height: 60px;
 	width: auto;
 }
 
@@ -33,10 +33,11 @@
 
 nav {
 	position: fixed;
-	height: 80px;
+	height: 60px;
 	width: 100%;
 	/* background-color: transparent; */
 	/* background-color: rgba(255, 255, 255, 0.2); */
+	/* background-color: rgb(230, 230, 230); */
 	background-color: white;
 	z-index: 9999;
 }
@@ -50,14 +51,14 @@ nav ul {
 }
 
 nav ul li {
-	line-height: 80px;
-	max-height: 80px;
+	line-height: 60px;
+	max-height: 60px;
 	margin: 0 5px;
 }
 
 nav ul li a {
 	color: var(--primary);
-	font-size: 20px;
+	font-size: 1.2rem;
 	font-weight: 500;
 	padding: 7px 13px;
 	border-radius: 3px;
@@ -75,7 +76,7 @@ nav ul li a:hover {
 	font-size: 30px;
 	color: var(--primary);
 	float: right;
-	line-height: 80px;
+	line-height: 60px;
 	margin-right: 40px;
 	cursor: pointer;
 	display: None;
@@ -91,25 +92,20 @@ nav ul li a:hover {
 	border-radius: 25px;
 	text-transform: capitalize;
 	font-style: italic;
-	font-size: 18px;
+	font-size: 1.2rem;
 }
 
 .whatsapp-btn i {
 	margin-right: 3px;
 }
 
-@media (max-width: 952px) {
-	label.logo {
-		font-size: 30px;
-		padding-left: 50px;
-	}
-	nav ul li a {
-		font-size: 16px;
-		color: #ceb472;
-	}
+.whatsapp-btn:hover {
+	background-color: #ffffff;
+	color: var(--primary);
+	border: 1px solid var(--primary);
 }
 
-@media (max-width: 858px) {
+@media (max-width: 1100px) {
 	.check-btn {
 		display: block;
 	}
@@ -117,23 +113,23 @@ nav ul li a:hover {
 	nav ul {
 		position: fixed;
 		width: 100%;
-		height: 100vh;
-		background: rgba(0, 0, 0, 0.8);
-		top: 80px;
+		height: calc(100vh - 60px);
+		background: rgba(12, 12, 12, 0.95);
+		top: 60px;
 		left: -100%;
 		text-align: center;
 		transition: all 0.5s;
 		flex-direction: column;
-		justify-content: flex-start;
+		justify-content: center;
 	}
 
 	nav ul li {
-		margin: 50px 0;
-		line-height: 30px;
+		margin: 2.5rem 0;
+		line-height: 2rem;
 	}
 
 	nav ul li a {
-		font-size: 20px;
+		font-size: 1.4rem;
 	}
 
 	a:hover,
@@ -153,8 +149,14 @@ nav ul li a:hover {
 
 	.logo2 {
 		display: inline-block;
-		height: 80px;
-		padding-left: 20px;
+		height: 60px;
+		padding-left: 2vw;
+	}
+}
+
+@media (max-width: 500px) {
+	nav ul li a {
+		font-size: 1.2rem;
 	}
 }
 
@@ -162,35 +164,55 @@ nav ul li a:hover {
 										HERO SECTION
 *****************************************************************************************************/
 .hero {
-	height: calc(100vh - 80px);
-	padding-top: 80px;
+	height: calc(100vh - 60px);
+	padding-top: 60px;
 }
 
 .hero-img {
 	display: block;
 	width: 100%;
-	height: calc(100vh - 80px);
+	height: calc(100vh - 60px);
 	object-fit: cover;
 }
 
 .hero-content {
 	position: absolute;
-	top: 50%;
-	left: 20px;
+	top: 65%;
+	left: 5vw;
 	color: black;
-	padding-left: 20px;
-	padding-right: 20px;
+	/* padding-left: 20px;
+	padding-right: 20px; */
 	border-radius: 10px;
 }
 
 .hero-content h1 {
 	font-weight: 700;
-	font-size: 3.5rem;
+	font-size: 3.8rem;
 }
 
 .hero-content h3 {
-	font-weight: 400;
-	font-size: 2rem;
+	font-weight: 500;
+	font-size: 2.2rem;
+}
+
+@media (max-width: 1100px) {
+	.hero-content {
+		top: 70%;
+	}
+}
+
+@media (max-width: 500px) {
+	.hero-content {
+		left: 10px;
+		top: 75%;
+	}
+	.hero-content h1 {
+		font-size: 2rem;
+	}
+
+	.hero-content h3 {
+		font-size: 1.5rem;
+	}
 }
 
 /****************************************************************************************************
@@ -200,6 +222,7 @@ nav ul li a:hover {
 	min-height: 100vh;
 	background-color: #ddd;
 	display: flex;
+	padding-top: 60px;
 }
 
 .about-container {
@@ -207,9 +230,8 @@ nav ul li a:hover {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 80px;
 	margin: auto;
-	max-width: 1900px;
+	max-width: 80vw;
 }
 
 .about-content-section {
@@ -218,6 +240,7 @@ nav ul li a:hover {
 
 .about-image-section {
 	max-width: 900px;
+	margin-left: 5vw;
 }
 
 .about-image-section img {
@@ -228,30 +251,30 @@ nav ul li a:hover {
 
 .about-content-section .about-title {
 	text-transform: uppercase;
-	font-size: 28px;
+	font-size: 1.5rem;
+	font-weight: 700;
 }
 
 .about-content-section .about-content h3 {
-	margin-top: 20px;
+	margin-top: 1rem;
 	color: #5d5d5d;
-	font-size: 21px;
+	font-size: 1.8rem;
 }
 
 .about-content-section .about-content p {
-	margin-top: 10px;
-	font-size: 18px;
-	line-height: 1.5;
+	margin-top: 0.6rem;
+	font-size: 1.2rem;
 }
 
 .about-content-section .about-content .about-button {
-	margin-top: 30px;
+	margin-top: 1.5rem;
 }
 
 .about-content-section .about-content .about-button a {
 	background-color: var(--primary);
-	padding: 12px 40px;
+	padding: 0.4rem 1rem;
 	color: #fff;
-	font-size: 25px;
+	font-size: 1.5rem;
 	letter-spacing: 1.5px;
 	border-radius: 5rem;
 }
@@ -262,15 +285,46 @@ nav ul li a:hover {
 	border: 1px solid var(--primary);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 500px) {
+	.about-section {
+		margin-top: 60px;
+	}
+}
+
+@media (max-width: 800px) {
+	.about-content-section .about-title {
+		font-size: 1.2rem;
+	}
+	.about-content-section .about-content h3 {
+		font-size: 1.25rem;
+	}
+	.about-content-section .about-content p {
+		font-size: 1rem;
+	}
+	.about-content-section .about-content .about-button a {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 1100px) {
 	.about-container {
 		flex-direction: column;
 		justify-content: space-around;
 	}
-
+	.about-content-section {
+		width: 100%;
+		text-align: center;
+	}
+	.about-image-section {
+		margin-bottom: 40px;
+		margin-left: 0;
+	}
 	.about-image-section img {
-		margin-top: 5vh;
 		height: 50vh;
+		margin-top: 5vh;
+	}
+	.about-content-section .about-content .about-button {
+		margin: 2rem auto 0 auto;
 	}
 }
 
@@ -278,7 +332,7 @@ nav ul li a:hover {
 										WHY SECTION
 *****************************************************************************************************/
 .why-us {
-	min-height: 100vh;
+	min-height: 90vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -303,13 +357,13 @@ nav ul li a:hover {
 	color: #5d5d5d;
 }
 
-.container {
+.why-container {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 }
 
-.card {
+.why-card {
 	/* height: auto; */
 	flex-basis: auto;
 	flex-wrap: wrap;
@@ -319,22 +373,19 @@ nav ul li a:hover {
 	border-radius: 25px;
 }
 
-.card img {
+.why-card img {
 	width: 100%;
 	border-radius: 25px 25px 0 0;
 }
 
-.card .text {
+.why-card .text {
 	padding: 1rem;
 }
 
-@media (min-width: 1500px) {
-	.card {
-		max-width: 500px;
-	}
-}
-
 @media (max-width: 500px) {
+	.why-us {
+		padding-top: 60px;
+	}
 	.title {
 		margin: 2rem 1rem 1rem 1rem;
 	}
@@ -347,20 +398,28 @@ nav ul li a:hover {
 	}
 }
 
+@media (min-width: 1440px) {
+	.why-card {
+		max-width: 500px;
+	}
+}
+
 /****************************************************************************************************
 										CONTACT SECTION
 *****************************************************************************************************/
 .contact {
 	min-height: 80vh;
-	margin-bottom: 80px;
-	/* padding-top: 80px; */
-	/* border: 2px solid grey; */
+	background-color: #ddd;
+	padding-top: 80px;
+}
+
+.contact .title {
+	margin: 0 auto 2rem auto;
 }
 
 .contact .column {
 	max-width: 1300px;
 	margin: 0 auto;
-	/* border: 2px solid grey; */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -386,11 +445,9 @@ nav ul li a:hover {
 	padding: 0 0.5rem;
 	color: var(--primary);
 	width: 3rem;
-	/* border: 2px solid grey; */
 }
 
 .contact .row-content {
-	/* border: 2px solid grey; */
 	padding: 0 1rem;
 }
 
@@ -399,7 +456,6 @@ nav ul li a:hover {
 }
 
 .contact .row p {
-	padding-left: 5px;
 	font-size: 1.1rem;
 	color: grey;
 }
@@ -411,7 +467,7 @@ nav ul li a:hover {
 
 .contact .column-right iframe {
 	display: flex;
-	margin-left: 20px;
+	margin-left: 5rem;
 	height: 50vh;
 	width: 50vw;
 	max-width: 740px;
@@ -429,10 +485,11 @@ nav ul li a:hover {
 
 	.contact .column-right iframe {
 		height: 50vh;
-		padding: 1rem 0 0 0;
+		padding: 2rem 0;
 		margin-left: auto;
 		margin-right: auto;
 		width: 100%;
+		max-width: 80vw;
 	}
 }
 
@@ -442,16 +499,16 @@ nav ul li a:hover {
 
 .footer {
 	background: rgb(230, 230, 230);
-	padding: 30px 0px 15px 0px;
+	padding: 1rem;
 	text-align: center;
 }
 
 .footer .row {
 	width: 100%;
-	margin: 1% 0%;
-	padding: 0.6% 0%;
+	margin: 1rem 0;
 	color: gray;
 	font-size: 0.8em;
+	text-align: center;
 }
 
 .footer .row a {
@@ -464,31 +521,7 @@ nav ul li a:hover {
 	color: var(--primary);
 }
 
-.footer .row ul {
-	width: 100%;
-}
-
-.footer .row ul li {
-	display: inline-block;
-	margin: 0px 30px;
-}
-
 .footer .row a i {
 	font-size: 2em;
-	margin: 1% 1% 0.5% 1%;
-}
-
-@media (max-width: 720px) {
-	.footer {
-		text-align: left;
-		padding: 5%;
-	}
-	.footer .row ul li {
-		display: block;
-		margin: 10px 0px;
-		text-align: left;
-	}
-	.footer .row a i {
-		margin: 0% 3%;
-	}
+	margin: 1rem;
 }
