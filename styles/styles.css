@@ -98,6 +98,12 @@ nav ul li a:hover {
 	margin-right: 3px;
 }
 
+.whatsapp-btn:hover {
+	background-color: #ffffff;
+	color: var(--primary);
+	border: 1px solid var(--primary);
+}
+
 @media (max-width: 952px) {
 	label.logo {
 		font-size: 30px;
@@ -175,7 +181,7 @@ nav ul li a:hover {
 
 .hero-content {
 	position: absolute;
-	top: 50%;
+	top: 65%;
 	left: 20px;
 	color: black;
 	padding-left: 20px;
@@ -185,12 +191,12 @@ nav ul li a:hover {
 
 .hero-content h1 {
 	font-weight: 700;
-	font-size: 3.5rem;
+	font-size: 3.8rem;
 }
 
 .hero-content h3 {
 	font-weight: 400;
-	font-size: 2rem;
+	font-size: 2.2rem;
 }
 
 /****************************************************************************************************
@@ -200,6 +206,7 @@ nav ul li a:hover {
 	min-height: 100vh;
 	background-color: #ddd;
 	display: flex;
+	padding-top: 80px;
 }
 
 .about-container {
@@ -207,7 +214,7 @@ nav ul li a:hover {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 80px;
+
 	margin: auto;
 	max-width: 1900px;
 }
@@ -274,11 +281,22 @@ nav ul li a:hover {
 	}
 }
 
+@media (max-width: 500px) {
+	.about-content-section {
+		width: 80%;
+		margin-top: 60px;
+	}
+
+	.about-image-section {
+		margin-bottom: 40px;
+	}
+}
+
 /****************************************************************************************************
 										WHY SECTION
 *****************************************************************************************************/
 .why-us {
-	min-height: 100vh;
+	min-height: 90vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -303,13 +321,13 @@ nav ul li a:hover {
 	color: #5d5d5d;
 }
 
-.container {
+.why-container {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 }
 
-.card {
+.why-card {
 	/* height: auto; */
 	flex-basis: auto;
 	flex-wrap: wrap;
@@ -319,17 +337,17 @@ nav ul li a:hover {
 	border-radius: 25px;
 }
 
-.card img {
+.why-card img {
 	width: 100%;
 	border-radius: 25px 25px 0 0;
 }
 
-.card .text {
+.why-card .text {
 	padding: 1rem;
 }
 
 @media (min-width: 1500px) {
-	.card {
+	.why-card {
 		max-width: 500px;
 	}
 }
@@ -352,15 +370,17 @@ nav ul li a:hover {
 *****************************************************************************************************/
 .contact {
 	min-height: 80vh;
-	margin-bottom: 80px;
-	/* padding-top: 80px; */
-	/* border: 2px solid grey; */
+	background-color: #ddd;
+	padding-top: 80px;
+}
+
+.contact .title {
+	margin: 0 auto 2rem auto;
 }
 
 .contact .column {
 	max-width: 1300px;
 	margin: 0 auto;
-	/* border: 2px solid grey; */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -386,11 +406,9 @@ nav ul li a:hover {
 	padding: 0 0.5rem;
 	color: var(--primary);
 	width: 3rem;
-	/* border: 2px solid grey; */
 }
 
 .contact .row-content {
-	/* border: 2px solid grey; */
 	padding: 0 1rem;
 }
 
@@ -429,10 +447,11 @@ nav ul li a:hover {
 
 	.contact .column-right iframe {
 		height: 50vh;
-		padding: 1rem 0 0 0;
+		padding: 1rem 0;
 		margin-left: auto;
 		margin-right: auto;
 		width: 100%;
+		max-width: 80vw;
 	}
 }
 
