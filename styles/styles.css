@@ -228,7 +228,7 @@ nav ul li a:hover {
 .about-container {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	margin: auto;
 	max-width: 80vw;
@@ -258,7 +258,7 @@ nav ul li a:hover {
 .about-content-section .about-content h3 {
 	margin-top: 1rem;
 	color: #5d5d5d;
-	font-size: 1.8rem;
+	font-size: 1.4rem;
 }
 
 .about-content-section .about-content p {
@@ -370,6 +370,7 @@ nav ul li a:hover {
 	max-width: 400px;
 	margin: 2rem;
 	border-radius: 25px;
+	margin-bottom: 50px;
 }
 
 .why-card img {
@@ -419,6 +420,11 @@ nav ul li a:hover {
 
 .contact .title {
 	margin: 0 auto 2rem auto;
+}
+
+.contact .title p {
+	color: #5d5d5d;
+	font-size: 1.2rem;
 }
 
 .contact .column {
@@ -472,6 +478,7 @@ nav ul li a:hover {
 .contact .column-right iframe {
 	display: flex;
 	margin-left: 5rem;
+	margin-bottom: 2rem;
 	height: 450px;
 	width: 450px;
 	max-width: 740px;
@@ -510,7 +517,7 @@ nav ul li a:hover {
 
 .footer .row {
 	width: 100%;
-	margin: 1rem 0;
+	margin: 1rem 0 0.5rem 0;
 	color: gray;
 	font-size: 0.8em;
 	text-align: center;
